@@ -1,0 +1,113 @@
+/* 共通 */
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 0;
+}
+h1 {
+  font-size: 34px;
+  text-align: center;
+  margin: 80px auto;
+}
+h2 {
+  font-size: 24px;
+}
+p {
+  font-size: 18px;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* ヘッダー */
+header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+header nav {
+  margin: 20px auto;
+}
+
+.myprofile {
+  color: #000;
+  border: 1px solid #000;
+  padding: 0 20px;
+}
+
+#nav a {
+  margin: 0 18px;
+}
+
+/* メイン */
+#main {
+  position: relative;
+  margin: 0;
+}
+
+#main > img {
+  width: 100%;
+}
+
+/* About */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto 100px auto;
+}
+
+.profile-img {
+  margin: auto 70px;
+  border-radius: 50%;
+}
+
+.introduction {
+  padding-top: 20px;
+  margin: auto 70px;
+}
+
+.introduction ul {
+  font-size: 18px;
+}
+
+/* Works */
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  max-width: 960px;
+}
+
+.item {
+  padding-bottom: 60px;
+  margin: 0 10px;
+  width: 25%;
+}
+
+.item img {
+  max-width: 100%;
+}
+
+
+/* フッダー */
+footer {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* スマートフォン用 */
+@media (max-width: 767px) {
+  header, .about, .works {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item {
+    width: 95%;
+    text-align: center;
+  }
+}
